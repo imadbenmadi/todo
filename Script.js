@@ -1,12 +1,14 @@
 let btn = document.querySelector(".btn");
-btn.addEventListener("click", login);
+btn.addEventListener("click", add_Todo);
 
-function login() {
-    let name = document.querySelector(".name").value;
-    document.querySelector(".container").style.display = "none";
-    
-    let newElement = document.createElement("div");
-    newElement.classList.add("newElement");
-    newElement.textContent = "Welcome Back! " + name;
-    document.body.appendChild(newElement);
+function add_Todo() {
+    let text = document.querySelector(".input").value;
+    let todos = document.querySelector(".todos");
+    if (text) {
+        let newElement = document.createElement("div");
+        newElement.textContent = text;
+        newElement.classList.add("todo_item")
+        todos.appendChild(newElement);  
+        document.querySelector(".input").value = "";
+    }
 }

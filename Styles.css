@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.add_todo {
+    padding: 20px;
+    flex: 30%;
+}
+.input {
+    display: block;
+    padding: 10px;
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+.btn {
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(0, 255, 0);
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.todos {
+    background-color: rgba(0, 0, 255, 0.064);
+    border-left: 1px solid black;
+    height: 100vh;
+    flex: 70%;
+}
+h1{
+    text-align: center;
+}
+.todo_item{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(0, 255, 0);
+    margin-bottom: 10px;
+}
